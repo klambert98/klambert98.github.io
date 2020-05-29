@@ -422,7 +422,7 @@
     top: 50%;
   }
 
-  .fnc-slide__mask {
+  .fnc-slide__mask, .m--before-sliding .fnc-slide__mask-inner,  .m--active-slide .fnc-slide__mask-inner,   .m--previous-slide .fnc-slide__mask-inner {
     height: 0;
   }
 

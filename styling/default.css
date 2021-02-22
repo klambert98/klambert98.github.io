@@ -1,69 +1,76 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 :root {
-	--color-primary: #556B2F;
-	--color-secondary: #D1AA24;
-	--color-tertiary: #251E24;
-	--color-dark: #352C27;
-	--color-light: #fff;
-	--font-primary: "PT Sans";
-	--font-secondary: "Lato";
+    --color-primary: #5A189A;
+    --color-secondary: #FF8500;
+    --color-tertiary: #7e7e7e;
+    --color-dark: #000;
+    --color-light: #fff;
+    --font-primary: "PT Sans";
+    --font-secondary: "Lato";
 }
 
 body {
-	background: var(--color-light);
-	font-family: var(--font-secondary);
-	text-align: center;
-	color: var(--color-dark);
-	margin: 0 auto;
-	overflow-x: hidden;
-	display: flex;
-	flex-direction: column;
+    background: var(--color-light);
+    font-family: var(--font-secondary);
+    text-align: center;
+    color: var(--color-dark);
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-light);
 }
 
 nav {
-	/* Styling */
-
-	/* Mechanics */
-	display: flex;
-	flex-direction: row;
-	justify-items: flex-end;
-	
-	align-items: center;
-	margin-left: auto;
+    /* Styling */
+    /* Mechanics */
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    align-items: center;
+    margin-left: auto;
 }
 
 nav a {
-	/* Styling */
-	color: var(--color-primary);
-	font-weight: bold;
-	text-decoration: none;
-	padding: .3em 1em;
-	border-radius: .25em;
-
-	/* Mechanics */
-	transition: flex-grow 0.5s ease;
-	flex-grow: 1;
+    /* Styling */
+    color: var(--color-tertiary);
+    font-weight: bold;
+    text-decoration: none;
+    padding: .5vw 1vw;
+    border-radius: .25em;
+    /* Mechanics */
+    transition: flex-grow 0.5s ease;
+    flex-grow: 1;
 }
 
 nav a:hover {
     /* Styling */
-	background: var(--color-tertiary);
-	color: var(--color-light);
-	text-decoration: none;
-	font-weight: bold;
-
-	/* Mechanics */
-	transition: flex-grow 0.5s ease;
-	flex-grow: 3;
+    background: var(--color-tertiary);
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: bold;
+    /* Mechanics */
+    transition: flex-grow 0.5s ease;
+    flex-grow: 2;
 }
 
 main {
-	display: block;
+    display: block;
+}
+
+main .jumbotron {
+    /* Styling */
+    color: var(--color-light);
+    background-color: var(--color-secondary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Mechanics */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15vw 20vw;
 }
